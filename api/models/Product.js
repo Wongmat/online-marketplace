@@ -9,6 +9,19 @@ module.exports = {
 
   attributes: {
 
+    title: {
+      type: "string"
+    },
+
+    price: {
+      type: "number"
+    },
+
+    inventory_count: {
+      type: "number"
+    }
+
+
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
