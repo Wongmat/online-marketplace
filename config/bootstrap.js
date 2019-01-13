@@ -20,11 +20,11 @@ module.exports.bootstrap = async function(done) {
   //   return done();
   // }
   //
-  // await User.createEach([
-  //   { emailAddress: 'ry@example.com', fullName: 'Ryan Dahl', },
-  //   { emailAddress: 'rachael@example.com', fullName: 'Rachael Shaw', },
-  //   // etc.
-  // ]);
+   await Product.createEach([
+     { title: 'Supersoaker', price: 99, inventory_count: 1},
+     { title: 'Doll', price: 98, inventory_count: 2},
+     // etc.
+   ]);
   // ```
 
   // Don't forget to trigger `done()` when this bootstrap function's logic is finished.
