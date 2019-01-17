@@ -56,7 +56,7 @@ module.exports.routes = {
 
   'PUT /cart/:username': 'CartController.addToCart',
 
-  'PUT /cart/:username/checkout' : 'CartController.checkout',
+  'POST /cart/:username/checkout' : 'CartController.checkout',
 
 
 
