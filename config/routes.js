@@ -48,7 +48,15 @@ module.exports.routes = {
 
   'GET /product/:title': 'ProductController.getProduct',
 
-  'GET /product/': 'ProductController.getAll'
+  'GET /product/': 'ProductController.getAll',
+
+  'POST /cart/': 'CartController.create',
+
+  'GET /cart/:username': 'CartController.getProducts',
+
+  'PUT /cart/:username': 'CartController.addToCart',
+
+  'POST /cart/:username/checkout' : 'CartController.checkout',
 
 
 
