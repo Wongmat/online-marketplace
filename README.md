@@ -2,21 +2,41 @@
 A web api for an online shop built on the Sails.js framework.
 
 
-### If you are not familiar with Sails
+## If you are not familiar with Sails
+### Folders of interest:
+- /api: Where most of the code relating to the api will be found
+- /api/controllers: Where the controllers for the two models (product, cart) are found
+- /api/models: Where the files for the models can be found
+- /config/routes: Routing settings
+  
 
-+ [Get started](https://sailsjs.com/get-started)
-+ [Sails framework documentation](https://sailsjs.com/documentation)
-+ [Version notes / upgrading](https://sailsjs.com/documentation/upgrading)
-+ [Deployment tips](https://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](https://sailsjs.com/support)
-+ [Professional / enterprise options](https://sailsjs.com/enterprise)
+
+## To start
+
+1. Download and run __npm install__
+
+2. Run app with __sails lift__
+
+## Endpoints
+
+1. Products: __/product/__
+
+2. Carts: __/cart/__
+
+## Functions
+
+### Products:
+- __Get Product:__ GET request to /product/{id}, id being the id of the product
+
+- __Get All Products:__ GET request to /product. Add ?instock=true to show only instock products
+
+- __Create Product:__ POST request to /product. The body of the request must contain values for __title__, __inventory_count__, and __price__. __Successful response__ will yield a __201__ status with the url of the created product in the Location field of the header
 
 
-### Version info
+### Carts:
+- __Get Cart:__ GET request to /cart/{id}, id being the id of the cart
 
-This app was originally generated on Sun Jan 13 2019 21:45:07 GMT+0800 (HKT) using Sails v1.0.2.
-
-<!-- Internally, Sails used [`sails-generate@1.15.28`](https://github.com/balderdashy/sails-generate/tree/v1.15.28/lib/core-generators/new). -->
+- __Create Product:__ POST request to /product. __Successful response__ will yield a __201__ status with the url of the created product in the Location field of the header
 
 
 
