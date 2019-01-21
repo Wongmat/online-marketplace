@@ -20,7 +20,7 @@ A web api for an online shop built on the Sails.js framework.
 ## Objects & Endpoints
 
 1. Products: __localhost:1337/product__
-   All products have three attributes: __title__, __price__, __inventory_count__
+   All products have three attributes: __title__, __price__, __inventory_count__. For convenience, two product objects have      already been preloaded into the app.
 
 2. Carts: __localhost:1337/cart__
    All carts have one attribute: __total__ (Subtotal of cart in dollars). Items in cart are recorded using the __hasProduct__    association
