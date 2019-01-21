@@ -26,17 +26,17 @@ A web api for an online shop built on the Sails.js framework.
 ## Functions
 
 ### Products:
+- __Create Product:__ POST request to /product. The body of the request must contain values for __title__, __inventory_count__, and __price__. __Successful response__ will yield a __201__ status with the url of the created product in the Location field of the header
+
 - __Get Product:__ GET request to /product/{id}, id being the id of the product
 
 - __Get All Products:__ GET request to /product. Add the __instock=true__ parameter to show only instock products (localhost:1337/product?instock=true)
 
-- __Create Product:__ POST request to /product. The body of the request must contain values for __title__, __inventory_count__, and __price__. __Successful response__ will yield a __201__ status with the url of the created product in the Location field of the header
-
 
 ### Carts:
-- __Get Cart:__ GET request to /cart/{id}, id being the id of the cart
-
 - __Create Cart:__ POST request to /cart. __Successful response__ will yield a __201__ status with the url of the created cart in the Location field of the header
+
+- __Get Cart:__ GET request to /cart/{id}, id being the id of the cart
 
 - __Add Product to Cart:__ PUT request to /cart/{id}. id is the ID of the desired cart. Body of request must contain __id__ of product
 
