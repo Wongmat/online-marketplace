@@ -28,7 +28,7 @@ A web api for an online shop built on the Sails.js framework.
 ### Products:
 - __Get Product:__ GET request to /product/{id}, id being the id of the product
 
-- __Get All Products:__ GET request to /product. Add __?instock=true__ to show only instock products
+- __Get All Products:__ GET request to /product. Add the __instock=true__ parameter to show only instock products (localhost:1337/product?instock=true)
 
 - __Create Product:__ POST request to /product. The body of the request must contain values for __title__, __inventory_count__, and __price__. __Successful response__ will yield a __201__ status with the url of the created product in the Location field of the header
 
