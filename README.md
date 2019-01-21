@@ -36,12 +36,8 @@ A web api for an online shop built on the Sails.js framework.
 ### Carts:
 - __Get Cart:__ GET request to /cart/{id}, id being the id of the cart
 
-- __Create Product:__ POST request to /product. __Successful response__ will yield a __201__ status with the url of the created product in the Location field of the header
+- __Create Cart:__ POST request to /cart. __Successful response__ will yield a __201__ status with the url of the created cart in the Location field of the header
 
+- __Add Product to Cart:__ PUT request to /cart/{id}. id is the ID of the desired cart. Body of request must contain __id__ of product
 
-
-<!--
-Note:  Generators are usually run using the globally-installed `sails` CLI (command-line interface).  This CLI version is _environment-specific_ rather than app-specific, thus over time, as a project's dependencies are upgraded or the project is worked on by different developers on different computers using different versions of Node.js, the Sails dependency in its package.json file may differ from the globally-installed Sails CLI release it was originally generated with.  (Be sure to always check out the relevant [upgrading guides](https://sailsjs.com/upgrading) before upgrading the version of Sails used by your app.  If you're stuck, [get help here](https://sailsjs.com/support).)
--->
-
-# online-marketplace
+- __Checkout:__ POST request to /cart/{id}/checkout. id is the ID of the desired cart.
