@@ -40,4 +40,4 @@ A web api for an online shop built on the Sails.js framework.
 
 - __Add Product to Cart:__ PUT request to /cart/{id}. id is the ID of the desired cart. Body of request must contain __id__ of product
 
-- __Checkout:__ POST request to /cart/{id}/checkout. id is the ID of the desired cart.
+- __Checkout:__ POST request to /cart/{id}/checkout. id is the ID of the desired cart. Successful requests will return a __200__ status response
