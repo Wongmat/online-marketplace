@@ -13,9 +13,9 @@ A web api for an online shop built on the Sails.js framework.
 
 ## To start
 
-1. Download and run __npm install__
+1. Download and run __npm install__ in terminal
 
-2. Run app with __sails lift__
+2. Run app with __sails lift__ in terminal
 
 ## Objects & Endpoints
 
