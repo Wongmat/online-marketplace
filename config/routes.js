@@ -46,17 +46,17 @@ module.exports.routes = {
 
   'POST /product/': 'ProductController.create',
 
-  'GET /product/:title': 'ProductController.getProduct',
+  'GET /product/:id': 'ProductController.getProduct',
 
   'GET /product/': 'ProductController.getAll',
 
   'POST /cart/': 'CartController.create',
 
-  'GET /cart/:username': 'CartController.getProducts',
+  'GET /cart/:id': 'CartController.getProducts',
 
-  'PUT /cart/:username': 'CartController.addToCart',
+  'PUT /cart/:id': 'CartController.addToCart',
 
-  'POST /cart/:username/checkout' : 'CartController.checkout',
+  'POST /cart/:id/checkout' : 'CartController.checkout',
 
 
 
