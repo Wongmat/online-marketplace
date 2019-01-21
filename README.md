@@ -1,9 +1,8 @@
 # online-marketplace
+A web api for an online shop built on the Sails.js framework.
 
-a [Sails v1](https://sailsjs.com) application
 
-
-### Links
+### If you are not familiar with Sails
 
 + [Get started](https://sailsjs.com/get-started)
 + [Sails framework documentation](https://sailsjs.com/documentation)
