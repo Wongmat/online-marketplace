@@ -19,9 +19,9 @@ A web api for an online shop built on the Sails.js framework.
 
 ## Endpoints
 
-1. Products: __/product/__
+1. Products: __localhost:1337/product__
 
-2. Carts: __/cart/__
+2. Carts: __localhost:1337/cart__
 
 ## Functions
 
