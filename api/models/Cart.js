@@ -9,12 +9,9 @@ module.exports = {
 
   attributes: {
 
-    username: {
-      type: "string"
-    },
-
     total: {
-      type: "number"
+      type: "number",
+      defaultsTo: 0
     },
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
